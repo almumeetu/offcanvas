@@ -1,0 +1,181 @@
+@import '../utils';
+
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Theme Name
+    Author: AL Mumeetu Saikat
+    Support: ialmumeetu@gmail.com
+    Description: Template Name  – HTML5 Template
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+
+    01. THEME DEFAULT CSS
+    02. HEADER CSS
+
+
+
+**********************************************/
+
+
+
+
+/*----------------------------------------*/
+/*  01. THEME DEFAULT CSS START
+/*----------------------------------------*/
+
+@import url($font-url);
+@import url($font-url2);
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*---------------------------------
+    typography css start 
+---------------------------------*/
+body {
+	font-family: var(--as-ff-body);
+	font-size: var(--as-fz-body);
+	font-weight: normal;
+	color: var(--as-text-body);
+	line-height: var(--as-lh-body);
+	overflow-x: hidden;
+
+	@media #{$xs} {
+		font-size: var(--as-fz-p2);
+		line-height: var(--as-lh-p2);
+	}
+}
+
+a {
+	text-decoration: none;
+	color: var(--as-heading-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--as-ff-heading);
+	color: var(--as-heading-primary);
+	margin: 0;
+	font-weight: var(--as-fw-heading);
+	@include transition(.3s);
+}
+
+h1 {
+	font-size: var(--as-fz-h1);
+	line-height: var(--as-lh-h1);
+
+	@media #{$md} {
+		font-size: var(--as-fz-tab-h1);
+		line-height: var(--as-lh-h1-tab);
+	}
+
+	@media #{$sm, $xs} {
+		font-size: var(--as-fz-mob-h1);
+		line-height: var(--as-lh-h1-mob);
+	}
+}
+
+h2 {
+	font-size: var(--as-fz-h2);
+	line-height: var((--as-lh-h2));
+
+	@media #{$md} {
+		font-size: var(--as-fz-tab-h2);
+		line-height: var(--as-lh-h2-tab);
+	}
+
+	@media #{$sm, $xs} {
+		font-size: var(--as-fz-mob-h2);
+		line-height: var(--as-lh-h2-mob);
+	}
+}
+
+h3 {
+	font-size: var(--as-fz-h3);
+	line-height: var(--as-lh-h3);
+
+	@media #{$md} {
+		font-size: var(--as-fz-tab-h3);
+	}
+
+	@media #{$sm, $xs} {
+		font-size: var(--as-fz-mob-h3);
+		line-height: var(--as-lh-h3-mob);
+	}
+}
+
+h4 {
+	font-size: var(--as-fz-h4);
+	line-height: var(--as-lh-h4);
+
+	@media #{$md} {
+		font-size: var(--as-fz-tab-h4);
+		line-height: var(--as-lh-h4-tab);
+	}
+
+	@media #{$sm, $xs} {
+		font-size: var(--as-fz-mob-h4);
+		line-height: var(--as-lh-h4-mob);
+	}
+}
+
+h5 {
+	font-size: var(--as-fz-h5);
+	line-height: var(--as-lh-h5);
+
+	@media #{$md} {
+		font-size: var(--as-fz-tab-h5);
+		line-height: var(--as-lh-h5-tab);
+	}
+
+	@media #{$sm, $xs} {
+		font-size: var(--as-fz-mob-h5);
+		line-height: var(--as-lh-h5-mob);
+	}
+}
+
+h6 {
+	font-size: var(--as-fz-h6);
+	line-height: var(--as-lh-h6);
+
+	@media #{$md} {
+		font-size: var(--as-fz-tab-h6);
+		line-height: var(--as-lh-h6-tab);
+	}
+
+	@media #{$sm, $xs} {
+		font-size: var(--as-fz-mob-h6);
+		line-height: var(--as-lh-h6-mob);
+	}
+
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+p {
+	font-family: var(--as-ff-p);
+	font-size: var(--as-fz-body);
+	font-weight: var(--as-fw-normal);
+	color: var(--as-text-body);
+	line-height: var(--as-lh-p);
+	margin: 0;
+	@media #{$xs} {
+		font-size: var(--as-fz-p2);
+		line-height: var(--as-lh-p2);
+	}
+}

@@ -1,0 +1,96 @@
+
+// font url
+
+$font-url: 'https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+$font-url2: 'https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+
+// font family
+$font-family: (
+    ff: (
+        body: "'PT Sans', sans-serif",
+        heading: "'Philosopher', sans-serif",
+        p: "'PT Sans', sans-serif",
+        menu: "'Philosopher', sans-serif",
+        button: "'Philosopher', sans-serif",
+    )
+);
+
+// font weight
+$font-scale: (
+    fw: (
+        normal: normal,
+        regular: 400,
+        medium: 500,
+        sbold: 600,
+        bold: 700,
+        heading: 700,
+        ebold: 800,
+        black: 900,
+    )
+);
+
+// font size
+$font-size: (
+    fz: (
+        body: 18px,
+        p: 18px,
+        p2: 16px,
+        h1: 60px,
+        h2: 48px,
+        h3: 36px ,
+        h4: 32px,
+        h5: 28px,
+        h6: 24px, 
+    )
+);
+
+$font-size-mob: (
+    fz-mob: (
+        body: 16px,
+        h1: 36px,
+        h2: 30px,
+        h3: 26px ,
+        h4: 22px,
+        h5: 20px,
+        h6: 18px, 
+    )
+);
+
+$font-size-tab: (
+    fz-tab: (
+        body: 18px,
+        h1: 48px,
+        h2: 40px,
+        h3: 32px ,
+        h4: 28px,
+        h5: 24px,
+        h6: 20px, 
+    )
+);
+//Line Height
+
+$line-height: (
+    lh: (
+        body: 28px,
+        p: 28px,
+        p2: 24px,
+        h1: 72px,
+        h2: 60px,
+        h3: 48px,
+        h4: 40px,
+        h5: 36px,
+        h6: 32px, 
+        h1-tab: 60px,
+        h2-tab: 50px,
+        h3-tab: 40px,
+        h4-tab: 36px,
+        h5-tab: 32px,
+        h6-tab: 28px,
+        h1-mob: 48px,
+        h2-mob: 40px,
+        h3-mob: 32px,
+        h4-mob: 28px,
+        h5-mob: 26px,
+        h6-mob: 24px,
+    )
+);
